@@ -251,4 +251,4 @@ cd frontend && npm run dev
 
 ---
 
-**Made with ❤️ for India's Sacred Heritage**
+**Made with ❤️ for Harshita for India's Sacred Heritage**
