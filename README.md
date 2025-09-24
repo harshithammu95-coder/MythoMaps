@@ -1,4 +1,4 @@
-#  MythoMaps - India's Sacred Heritage Explorer
+# 🕉️ MythoMaps - India's Sacred Heritage Explorer
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20.16.0-green.svg)](https://nodejs.org/)
@@ -251,4 +251,4 @@ cd frontend && npm run dev
 
 ---
 
-**Made with ❤️ for Harshita for India's Sacred Heritage**
+**Made with ❤️ for India's Sacred Heritage**

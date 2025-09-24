@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "name": "mythomaps",
+  "builds": [
+    {
+      "src": "backend/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    { 
+      "src": "/api/(.*)", 
+      "dest": "/backend/index.js" 
+    },
+    { 
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|webp|mp4)$)", 
+      "dest": "/frontend/dist/$1" 
+    },
+    { 
+      "handle": "filesystem"
+    },
+    { 
+      "src": "/(.*)", 
+      "dest": "/frontend/dist/index.html" 
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "backend/index.js": { 
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  },
+  "installCommand": "npm ci --prefix backend && npm ci --prefix frontend",
+  "buildCommand": "npm run build --prefix frontend"
+}
