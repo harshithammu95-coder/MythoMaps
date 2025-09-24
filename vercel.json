@@ -9,7 +9,9 @@
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": { 
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
@@ -31,12 +33,6 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "backend/index.js": { 
-      "maxDuration": 30,
-      "memory": 1024
-    }
   },
   "installCommand": "npm ci --prefix backend && npm ci --prefix frontend",
   "buildCommand": "npm run build --prefix frontend"
