@@ -8,7 +8,7 @@
 **MythoMaps** is a comprehensive full-stack web application that brings India's rich mythological heritage to life. Explore sacred destinations, discover ancient stories, and embark on spiritual journeys through India's most revered temples, pilgrimage sites, and mythological landmarks.
 
 ## 🌟 Live Demo
-- **Frontend**: [https://mythomaps.vercel.app](https://mythomaps.vercel.app)
+- **Frontend**: [Updated soon ...]
 - **Backend API**: [https://mythomaps-backend.vercel.app](https://mythomaps-backend.vercel.app)
 
 ---
